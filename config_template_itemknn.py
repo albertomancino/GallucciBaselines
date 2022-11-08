@@ -21,7 +21,7 @@ TEMPLATE = """experiment:
         save_recs: True
         validation_metric: nDCGRendle2020@10
         hyper_opt_alg: tpe
-        hyper_max_evals: 1
+        hyper_max_evals: 10
       neighbors: [uniform, 5, {max_items}]
       similarity: ['cosine', 'jaccard']
       implementation: standard

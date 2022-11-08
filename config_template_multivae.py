@@ -19,7 +19,7 @@ TEMPLATE = """experiment:
       meta:
         save_recs: True
         verbose: True
-        hyper_max_evals: 5
+        hyper_max_evals: 10
         hyper_opt_alg: tpe
         validation_rate: 5
         validation_metric: nDCGRendle2020@10

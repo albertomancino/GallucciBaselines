@@ -58,7 +58,7 @@ for data in subdatasets:
     max_users = (df[0].nunique()) * 0.5
     max_items = (df[1].nunique()) * 0.5
     config = template.format(sub=id_, path=data['path'], max_users=max_users, max_items=max_items)
-    config_path = os.path.join(config_dir, 'runtime_conf.yml')
+    config_path = os.path.join(config_dir, f'runtime_conf_{id_}.yml')
     with open(config_path, 'w') as file:
         file.write(config)
     run_experiment(config_path)

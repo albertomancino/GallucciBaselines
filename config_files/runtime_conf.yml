@@ -1,8 +1,8 @@
 experiment:
-  dataset: subdatasets_21
+  dataset: subdatasets_99
   data_config:
     strategy: dataset
-    dataset_path: /Users/albertomancino/PycharmProjects/GallucciBaselines/data/sub-movielens1m-gallucci/21/dataset_filtered_ordered_g21.tsv
+    dataset_path: /home/alberto/PycharmProjects/GallucciBaselines/data/sub-movielens1m-gallucci/99/dataset_filtered_ordered_g99.tsv
   splitting:
     test_splitting:
       strategy: random_subsampling
@@ -22,7 +22,7 @@ experiment:
         validation_metric: nDCGRendle2020@10
         hyper_opt_alg: tpe
         hyper_max_evals: 1
-      neighbors: [uniform, 5, 853.0]
+      neighbors: [uniform, 5, 74.0]
       similarity: ['cosine', 'jaccard']
       implementation: standard
       
